@@ -1,0 +1,89 @@
+/*---------- Card classes ----------*/
+
+.card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/*---------- Type variants ----------*/
+.card--primary {
+}
+
+.card-secondary {
+}
+
+/*---------- Size variants ----------*/
+.card--small {
+  max-width: 300px;
+}
+
+.card--medium {
+  max-width: 500px;
+}
+
+.card--large {
+  padding: 1.5rem;
+  max-width: 920px;
+}
+
+.card--full {
+  padding: 1.8rem;
+  width: 100%;
+}
+
+/*-----------------------------------------*/
+/*---------- PostPreview classes ----------*/
+
+.post-wrapper--featured {
+  display: flex;
+  gap: 1rem;
+}
+
+.post-thumbnail {
+  width: 100%;
+  max-width: 600px;
+  max-height: 200px;
+  border-radius: 0.2rem;
+  object-fit: cover;
+}
+
+.post-thumbnail--featured {
+  max-height: 400px;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.post-author {
+  font-size: 0.85rem;
+  color: #565656;
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
+  cursor: pointer;
+}
+
+.post-content {
+  font-size: 0.85rem;
+  color: #1e1e1e;
+}
+
+/*-----------------------------------------*/
+/*---------- Posts page classes ----------*/
+
+.posts {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
