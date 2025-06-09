@@ -32,7 +32,7 @@ const PostPreview: React.FC<PostPreviewProps> = ({
             styles["post-thumbnail"],
             styles["post-thumbnail--featured"]
           )}
-          alt="Post Thumbnail"
+          alt={title}
         />
 
         <div className={styles["post-info"]}>

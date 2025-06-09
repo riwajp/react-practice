@@ -1,37 +1,38 @@
+/*-----------------------------------------*/
 /*---------- Card classes ----------*/
 
 .card {
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   background-color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 /*---------- Type variants ----------*/
 .card--primary {
 }
 
-.card-secondary {
+.card--secondary {
 }
 
 /*---------- Size variants ----------*/
 .card--small {
-  max-width: 300px;
+  max-width: 18.75rem; /* 300px */
 }
 
 .card--medium {
-  max-width: 500px;
+  max-width: 31.25rem; /* 500px */
 }
 
 .card--large {
   padding: 1.5rem;
-  max-width: 920px;
+  max-width: 57.5rem; /* 920px */
 }
 
 .card--full {
@@ -49,14 +50,14 @@
 
 .post-thumbnail {
   width: 100%;
-  max-width: 600px;
-  max-height: 200px;
-  border-radius: 0.2rem;
+  max-width: 37.5rem;
+  max-height: 12.5rem;
+  border-radius: 4px;
   object-fit: cover;
 }
 
 .post-thumbnail--featured {
-  max-height: 400px;
+  max-height: 25rem;
 }
 
 .post-title {
@@ -68,7 +69,7 @@
   font-size: 0.85rem;
   color: #565656;
   border-bottom: 1px solid;
-  padding-bottom: 1px;
+  padding-bottom: 0.0625rem;
   cursor: pointer;
 }
 
@@ -82,8 +83,71 @@
 
 .posts {
   display: flex;
-
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-around;
+}
+
+/*-----------------------------------------*/
+/*---------- Header classes ----------*/
+
+.header {
+  background-color: #282c34;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1875rem solid #61dafb; /* 3px */
+  margin-bottom: 2rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header-children {
+  margin-left: 1rem;
+}
+
+.header-nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+/*-----------------------------------------*/
+/*---------- Footer classes --------------*/
+
+.footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.footerLinks {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.footerLink:hover {
+  color: #333;
 }

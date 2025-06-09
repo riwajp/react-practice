@@ -1,35 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const tasks = [
+    {
+      title: "JSX, Components & Props",
+      link: "/jsx-components-props",
+      desc: "This task covers the basics of JSX, creating components, and passing props in React.",
+      image: "/src/assets/screenshots/jsx-components-props.jpg",
+    },
+    {
+      title: "Conditional Rendering and Lists",
+      link: "/conditional-rendering-lists",
+      desc: "This task covers the basics of JSX, creating components, and passing props in React.",
+      image: "/src/assets/screenshots/conditional-rendering-lists.jpg",
+    },
+  ];
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="tasks-container">
+      <h1 className="title">Tasks</h1>
+      <div className="tasks-list">
+        {tasks.map((task, index) => (
+          <a key={task.link} href={task.link} className="task-card">
+            <div className="task-content">
+              <div className="task-number">Task {index + 1}</div>
+              <div className="task-title">{task.title}</div>
+              <div className="task-desc">
+                {task.desc}Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially
+                unchanged. It was popularised in the 1960s with the release of
+                Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.
+              </div>
+            </div>
+            <div className="task-image">
+              <img src={task.image} alt={task.title} />
+            </div>
+          </a>
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
