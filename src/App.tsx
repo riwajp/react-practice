@@ -14,12 +14,6 @@ function App() {
       desc: "This task covers the basics of JSX, creating components, and passing props in React.",
       image: "assets/screenshots/conditional-rendering-lists.jpg",
     },
-    {
-      title: "State & Event Handeling",
-      link: "/state-event-handeling",
-      desc: "This task covers the basics of JSX, creating components, and passing props in React.",
-      image: "assets/screenshots/state-event-handeling.jpg",
-    },
   ];
 
   return (
