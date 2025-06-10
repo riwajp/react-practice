@@ -6,13 +6,19 @@ function App() {
       title: "JSX, Components & Props",
       link: "/jsx-components-props",
       desc: "This task covers the basics of JSX, creating components, and passing props in React.",
-      image: "/src/assets/screenshots/jsx-components-props.jpg",
+      image: "assets/screenshots/jsx-components-props.jpg",
     },
     {
       title: "Conditional Rendering and Lists",
       link: "/conditional-rendering-lists",
       desc: "This task covers the basics of JSX, creating components, and passing props in React.",
-      image: "/src/assets/screenshots/conditional-rendering-lists.jpg",
+      image: "assets/screenshots/conditional-rendering-lists.jpg",
+    },
+    {
+      title: "State & Event Handeling",
+      link: "/state-event-handeling",
+      desc: "This task covers the basics of JSX, creating components, and passing props in React.",
+      image: "assets/screenshots/state-event-handeling.jpg",
     },
   ];
 
