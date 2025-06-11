@@ -24,7 +24,7 @@ export function ListRenderer<T>({
   }
 
   return (
-    <div className={clx(styles.grid, className)}>
+    <div className={clx(styles.grid, styles.listContainer, className)}>
       {items.length === 0 && <p className={styles.empty}>{emptyMessage}</p>}
       {items.length > 0 && items.map(renderItem)}
     </div>

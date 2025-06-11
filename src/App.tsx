@@ -8,12 +8,12 @@ function App() {
       desc: "This task focuses on creating a single blog page in React by building reusable components that display post previews and page layout elements. Key components such as Header, PostPreview, Card, and Footer accept props to customize their content and appearance, allowing for flexibility and consistency throughout the page. By using props and children, these components support easy customization while maintaining a clean and organized code structure. This approach not only simplifies maintenance but also makes it easier to extend and update the blog page as needed.",
       image: "assets/screenshots/jsx-components-props.jpg",
     },
-    // {
-    //   title: "Conditional Rendering and Lists",
-    //   link: "/conditional-rendering-lists",
-    //   desc: "This task covers the basics conditional rendering and lists in React.",
-    //   image: "assets/screenshots/conditional-rendering-lists.jpg",
-    // },
+    {
+      title: "Conditional Rendering and Lists",
+      link: "/conditional-rendering-lists",
+      desc: "This task involves building a TV Shows web page with search and genre filtering functionalities. The core of the implementation is the use of a reusable and generic React component called ListRenderer, which handles list rendering with support for loading and empty states.",
+      image: "assets/screenshots/conditional-rendering-lists.jpg",
+    },
   ];
 
   return (

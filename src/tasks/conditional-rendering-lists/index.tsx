@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ListRenderer } from "./components/ListRenderer";
 import showsData from "./shows.json";
 import styles from "./styles.module.css";
@@ -14,9 +14,9 @@ function App() {
     setIsLoading(false);
   }, []);
 
-  const allGenres = Array.from(
-    new Set(shows.flatMap((show) => show.genres))
-  ).sort();
+  const allGenres = useMemo(() => {
+    return Array.from(new Set(shows.flatMap((show) => show.genres))).sort();
+  }, [shows]);
 
   const filteredShows = shows.filter((show) => {
     const matchesGenre =
@@ -54,7 +54,6 @@ function App() {
       </div>
 
       <ListRenderer
-        className={styles.listContainer}
         isLoading={isLoading}
         items={filteredShows}
         renderItem={(show) => (
