@@ -9,6 +9,12 @@ function App() {
       image: "assets/screenshots/jsx-components-props.jpg",
     },
     {
+      title: "State & Event Handling",
+      link: "/state-event-handeling",
+      desc: "In this task, I created a modal-based signup form in React with TypeScript that demonstrates effective state management and event handling using custom hooks. I built a reusable useInput hook to manage input values and onChange logic for form fields. The form is displayed in the form of a Model, that can be toggled on or off. The form  handles user input dynamically, updates state in real time, and resets all fields on submit or close. All interactions, including form submission and modal toggling, are managed through clear event-driven logic.",
+      image: "assets/screenshots/state-event-handeling.png",
+    },
+    {
       title: "Conditional Rendering and Lists",
       link: "/conditional-rendering-lists",
       desc: "This task involves building a TV Shows web page with search and genre filtering functionalities. The core of the implementation is the use of a reusable and generic React component called ListRenderer, which handles list rendering with support for loading and empty states.",

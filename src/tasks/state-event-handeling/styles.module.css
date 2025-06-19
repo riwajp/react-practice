@@ -1,0 +1,62 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 320px;
+  text-align: center;
+}
+
+.input {
+  padding: 8px;
+  font-size: 14px;
+  background-color: rgb(208, 207, 207);
+  color: black;
+  border: 0;
+  border-radius: 8px;
+}
+
+.btn {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgb(107, 36, 207);
+  color: white;
+  border: 0;
+  min-width: 120px;
+  cursor: pointer;
+}
+
+.btnSmall {
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btnSuccess {
+  background-color: rgb(41, 163, 41);
+}
+
+.btnFailed {
+  background-color: rgb(218, 75, 75);
+}
+
+.status {
+  font-size: 16px;
+  color: rgb(65, 65, 169);
+  margin-top: 16px;
+}
