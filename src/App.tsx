@@ -21,10 +21,16 @@ function App() {
       image: "assets/screenshots/conditional-rendering-lists.jpg",
     },
     {
-      title: " useEffect & Side Effects",
+      title: "useEffect & Side Effects",
       link: "/useEffect-side-effects",
       desc: "In this task, I developed a modular live scoreboard application using React and TypeScript, showcasing advanced use of state and side-effect management through both built-in and custom hooks. The project is broken down into well-defined components: a Clock component that displays the current time and updates every second using a reusable useInterval hook, and a Scoreboard component that renders a list of live football match scores along with team names and logos in a visually styled layout. The match data is loaded from a local JSON file and simulates asynchronous data fetching by introducing a loading state using setTimeout. To emulate real-time updates, the data refreshes automatically every 5 seconds using the same useInterval hook, which encapsulates interval logic with proper cleanup to avoid memory leaks. By modularizing the UI and logic into smaller components and managing repeated side effects efficiently, this task demonstrates good architectural separation, reusable hook design, and responsive updates that mimic a live sports application.",
       image: "assets/screenshots/useEffect-side-effects.png",
+    },
+    {
+      title: "Forms & Controlled Inputs",
+      link: "/forms-controlled-inputs",
+      desc: "This task builds a controlled React contact form in TypeScript using a custom useFormField hook to manage each input’s value, touched state, and validation error. The hook accepts validator functions for dynamic per-field validation like required checks and email format. On submission, the form prevents sending if any errors exist, ensuring client-side validation before alerting and resetting. Inputs are rendered via a reusable InputField component that supports text and textarea fields with error display. This approach showcases controlled components, reusable hooks, and modular validation for a clean, maintainable form without external libraries.",
+      image: "assets/screenshots/forms-controlled-inputs.png",
     },
   ];
 
