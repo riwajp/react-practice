@@ -20,6 +20,12 @@ function App() {
       desc: "This task involves building a TV Shows web page with search and genre filtering functionalities. The core of the implementation is the use of a reusable and generic React component called ListRenderer, which handles list rendering with support for loading and empty states.",
       image: "assets/screenshots/conditional-rendering-lists.jpg",
     },
+    {
+      title: " useEffect & Side Effects",
+      link: "/useEffect-side-effects",
+      desc: "In this task, I developed a modular live scoreboard application using React and TypeScript, showcasing advanced use of state and side-effect management through both built-in and custom hooks. The project is broken down into well-defined components: a Clock component that displays the current time and updates every second using a reusable useInterval hook, and a Scoreboard component that renders a list of live football match scores along with team names and logos in a visually styled layout. The match data is loaded from a local JSON file and simulates asynchronous data fetching by introducing a loading state using setTimeout. To emulate real-time updates, the data refreshes automatically every 5 seconds using the same useInterval hook, which encapsulates interval logic with proper cleanup to avoid memory leaks. By modularizing the UI and logic into smaller components and managing repeated side effects efficiently, this task demonstrates good architectural separation, reusable hook design, and responsive updates that mimic a live sports application.",
+      image: "assets/screenshots/useEffect-side-effects.png",
+    },
   ];
 
   return (

@@ -6,11 +6,16 @@ import App from "./App.tsx";
 import Task1 from "./tasks/jsx-components-props/index.tsx";
 import Task3 from "./tasks/conditional-rendering-lists/index.tsx";
 import Task2 from "./tasks/state-event-handeling/index.tsx";
+import Task4 from "./tasks/useEffect-side-effects/index.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/useEFfect-side-effects",
+    element: <Task4 />,
   },
   {
     path: "/conditional-rendering-lists",

@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "homeTeam": "Barcelona",
+    "homeLogo": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg",
+    "awayTeam": "Real Madrid",
+    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg",
+    "homeScore": 2,
+    "awayScore": 3
+  },
+  {
+    "id": 2,
+
+    "homeTeam": "Liverpool",
+    "homeLogo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg",
+    "awayTeam": "Manchester City",
+    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
+    "homeScore": 1,
+    "awayScore": 1
+  },
+  {
+    "id": 3,
+
+    "homeTeam": "Arsenal",
+    "homeLogo": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
+    "awayTeam": "Chelsea",
+    "awayLogo": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
+    "homeScore": 0,
+    "awayScore": 2
+  }
+]
